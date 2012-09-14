@@ -9,7 +9,7 @@
 
 /* ************************************************************************
 
-#asset(${NAMESPACE}/*)
+#asset($${name}/*)
 
 ************************************************************************ */
 
@@ -59,7 +59,7 @@ core.Class("$${name}.Application", {
       
       // Create view managers
       var masterViewManager = new unify.view.ViewManager("master");
-      masterViewManager.register(${NAMESPACE}.view.Start, true);
+      masterViewManager.register($${name}.view.Start, true);
       this.add(masterViewManager);
       
       // Add at least one view manager to the navigation managment
