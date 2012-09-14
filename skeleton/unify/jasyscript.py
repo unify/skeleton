@@ -32,12 +32,12 @@ def api():
 
 @task("Source version")
 def source():
-    unify.unify_source()
+    unify.unify_source(jasy.env.State, NAMESPACE)
 
 
 @task("Build version")
 def build():
-    unify.unify_build()
+    unify.unify_build(jasy.env.State, NAMESPACE)
 
 
 @task
