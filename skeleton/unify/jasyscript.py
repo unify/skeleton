@@ -7,7 +7,7 @@ config.set("name", "$${name}")
 
 session.permutateField("debug")
 session.permutateField("es5")
-session.setField("application", NAMESPACE)
+session.setField("application", config.get("name"))
 
 
 @task("Clear build cache")
