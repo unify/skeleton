@@ -2,7 +2,7 @@
 # Part of Unify
 # Copyright (C) 2012 Sebastian Fastner, Mainz, Germany
 
-NAMESPACE = "$${name}"
+config.set("name", "$${name}")
 
 
 session.permutateField("debug")
@@ -32,14 +32,14 @@ def api():
 
 @task("Source version")
 def source():
-    unify.unify_source(jasy.env.State, NAMESPACE)
+    unify.source(session, config)
 
 
 @task("Build version")
 def build():
-    unify.unify_build(jasy.env.State, NAMESPACE)
+    unify.build(session, config)
 
 
 @task
 def run():
-    serve()
+    unify.serve()
