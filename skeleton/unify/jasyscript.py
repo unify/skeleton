@@ -8,6 +8,7 @@ config.set("name", "$${name}")
 session.permutateField("debug")
 session.permutateField("es5")
 session.setField("application", config.get("name"))
+session.setField("application.version", "1")
 
 
 @task("Clear build cache")
