@@ -26,7 +26,7 @@ def distclean():
 
 @task("Build the full api viewer into api folder")
 def api():
-    ApiWriter().write("data")
+    ApiWriter(session).write("data")
     # Generates API browser into api folder
     runTask("apibrowser", "build")
 
