@@ -28,7 +28,7 @@ def distclean():
 def api():
     ApiWriter(session).write("data")
     # Generates API browser into api folder
-    runTask("apibrowser", "build")
+    Task.runTask("apibrowser", "build")
 
 
 @task("Source version")
