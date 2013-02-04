@@ -9,6 +9,7 @@ session.permutateField("debug")
 session.permutateField("es5")
 session.setField("application", config.get("name"))
 session.setField("application.version", "1")
+session.setField("render.translate", False)
 
 
 @task("Clear build cache")
