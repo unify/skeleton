@@ -1,4 +1,4 @@
 {
     "name": "$${name}",
-    "requires" : [ { "source": "https://github.com/unify/unify.git", "version": "stable/3-latest" }, "https://github.com/zynga/apibrowser.git" ]
+    "requires" : [ { "source": "https://github.com/unify/unify.git", "version": "stable/3-latest" } ]
 }
